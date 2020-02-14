@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "private": true,
   "scripts": {
-    "create-toc": "doctoc ./README.md",
+    "create-toc": "doctoc ./README.md --github",
     "transpile": "babel src -d dist --copy-files"
   },
   "devDependencies": {

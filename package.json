@@ -7,7 +7,7 @@
     "modules:remove": "lerna run modules:remove",
     "modules:reset": "lerna run modules:reset",
     "dev": "lerna run dev",
-    "create-toc": "doctoc ./README.md && lerna run create-toc"
+    "create-toc": "doctoc ./README.md --github && lerna run create-toc"
   },
   "author": {
     "name": "Wappla",

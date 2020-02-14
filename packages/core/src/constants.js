@@ -1,13 +1,19 @@
-export const DEFAULT = 'default'
-export const BOOTSTRAP = 'bootstrap'
-export const TAILWIND = 'tailwind'
-export const TAILWIND_DARK = 'tailwind-light'
-export const TAILWIND_LIGHT = 'tailwind-dark'
+export const THEMES = {
+    default: 'default',
+    bootstrap: 'bootstrap',
+    tailwind: 'tailwind',
+    tailwindLight: 'tailwind-light',
+    tailwindDark: 'tailwind-dark',
+}
 
-export const PREPEND = 'prepend'
-export const APPEND = 'append'
-export const REPLACE = 'replace'
+export const TITLE_ACTIONS = {
+    prepend: 'prepend',
+    append: 'append',
+    replace: 'replace',
+}
 
-export const PRODUCTION = 'production'
-export const STAGING = 'staging'
-export const DEVELOPMENT = 'development'
+export const ENVIRONMENTS = {
+    production: 'production',
+    staging: 'staging',
+    development: 'development',
+}

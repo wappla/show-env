@@ -4,9 +4,16 @@
   "private": true,
   "main": "src/index.js",
   "scripts": {
-    "create-toc": "doctoc ./README.md",
+    "create-toc": "doctoc ./README.md --github",
     "modules:install": "npm install",
-    "modules:remove": "rm -rf node_modules"
+    "modules:remove": "rm -rf node_modules",
+    "modules:reset": "npm run modules:remove && npm run modules:install",
+    "transpile": "babel src -d dist --copy-files"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4"
   },
   "dependencies": {
     "@show-env/core": "^1.0.0"

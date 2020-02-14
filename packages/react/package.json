@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "main": "dist/index.js",
   "scripts": {
-    "create-toc": "doctoc ./README.md",
+    "create-toc": "doctoc ./README.md --github",
     "modules:install": "npm install",
     "modules:remove": "rm -rf node_modules",
     "modules:reset": "npm run modules:remove && npm run modules:install",

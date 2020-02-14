@@ -18,11 +18,11 @@ export const setFavicon = (newIcon) => {
 
 const getTitle = (env, title, type, divider) => {
     switch (type) {
-        case constants.REPLACE:
+        case constants.TITLE_ACTIONS.replace:
             return env
-        case constants.APPEND:
+        case constants.TITLE_ACTIONS.append:
             return `${title} ${divider} ${env}`
-        case constants.PREPEND:
+        case constants.TITLE_ACTIONS.prepend:
         default:
             return `${env} ${divider} ${title}`
     }
@@ -37,20 +37,14 @@ export const setTitle = (env, {
     document.title = newTitle
 }
 
-export const getTheme = (theme) => {
-    switch (theme) {
-        case constants.BOOTSTRAP:
-            return bootstrap
-        case constants.TAILWIND:
-            return tailwind
-        case constants.TAILWIND_DARK:
-            return tailwindDark
-        case constants.TAILWIND_LIGHT:
-            return tailwindLight
-        case constants.DEFAULT:
-        default:
-            return defaultTheme
-    }
+const themes = {
+    [constants.THEMES.bootstrap]: bootstrap,
+    [constants.THEMES.tailwind]: tailwind,
+    [constants.THEMES.tailwindDark]: tailwindDark,
+    [constants.THEMES.tailwindLight]: tailwindLight,
+    [constants.THEMES.defaultTheme]: defaultTheme,
 }
+
+export const getTheme = (theme) => themes[theme]
 
 export const getColor = (env, theme) => theme[env]
