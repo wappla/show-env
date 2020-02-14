@@ -1,4 +1,4 @@
-import createEnvBar from '../../src/index'
+import createEnvBar, { changeTitle, changeFavicon } from '../../src/index'
 
 window.onload = () => {
     let bar
@@ -19,7 +19,7 @@ window.onload = () => {
         removeBar()
         bar = await createEnvBar({ env, theme })
         // Update title
-        // TODO: update title
+        changeTitle(env, { type: 'replace' })
         // Update favicon
         // TODO: update favicon
     }
@@ -43,7 +43,6 @@ window.onload = () => {
     // Change env
     const changeEnv = (e) => {
         const newEnv = e.target.getAttribute('data-env')
-        console.log(newEnv)
         change(newEnv, theme)
     }
 

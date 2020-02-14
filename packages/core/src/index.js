@@ -14,12 +14,7 @@ export const changeFavicon = (newIcon) => {
     document.getElementsByTagName('head')[0].appendChild(link)
 }
 
-export const changeTitle = (env, {
-    type,
-    divider = '-',
-}) => {
-    const { title } = document
-
+const getTitle = (env, title, type, divider) => {
     switch (type) {
         case constants.REPLACE:
             return env
@@ -29,6 +24,15 @@ export const changeTitle = (env, {
         default:
             return `${env} ${divider} ${title}`
     }
+}
+
+export const changeTitle = (env, {
+    type,
+    divider = '-',
+}) => {
+    const { title } = document
+    const newTitle = getTitle(env, title, type, divider)
+    document.title = newTitle
 }
 
 export const getTheme = (theme) => {

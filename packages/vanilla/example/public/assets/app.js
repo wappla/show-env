@@ -897,13 +897,8 @@ var changeFavicon = function changeFavicon(newIcon) {
   link.href = newIcon;
   document.getElementsByTagName('head')[0].appendChild(link);
 };
-var changeTitle = function changeTitle(env, _ref) {
-  var type = _ref.type,
-      _ref$divider = _ref.divider,
-      divider = _ref$divider === void 0 ? '-' : _ref$divider;
-  var _document = document,
-      title = _document.title;
 
+var getTitle = function getTitle(env, title, type, divider) {
   switch (type) {
     case _constants__WEBPACK_IMPORTED_MODULE_3__["REPLACE"]:
       return env;
@@ -915,6 +910,16 @@ var changeTitle = function changeTitle(env, _ref) {
     default:
       return "".concat(env, " ").concat(divider, " ").concat(title);
   }
+};
+
+var changeTitle = function changeTitle(env, _ref) {
+  var type = _ref.type,
+      _ref$divider = _ref.divider,
+      divider = _ref$divider === void 0 ? '-' : _ref$divider;
+  var _document = document,
+      title = _document.title;
+  var newTitle = getTitle(env, title, type, divider);
+  document.title = newTitle;
 };
 var getTheme = function getTheme(theme) {
   switch (theme) {
@@ -1896,8 +1901,13 @@ window.onload = function () {
 
             case 5:
               bar = _context.sent;
+              // Update title
+              Object(_src_index__WEBPACK_IMPORTED_MODULE_1__["changeTitle"])(env, {
+                type: 'replace'
+              }); // Update favicon
+              // TODO: update favicon
 
-            case 6:
+            case 7:
             case "end":
               return _context.stop();
           }
@@ -1927,7 +1937,6 @@ window.onload = function () {
 
   var changeEnv = function changeEnv(e) {
     var newEnv = e.target.getAttribute('data-env');
-    console.log(newEnv);
     change(newEnv, theme);
   }; // Env handler
 
