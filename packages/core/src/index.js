@@ -6,6 +6,8 @@ import tailwind, {
 } from './theme/tailwind'
 import * as constants from './constants'
 
+export * from './constants'
+
 export const setFavicon = (newIcon) => {
     const link = document.querySelector("link[rel*='icon']") || document.createElement('link')
     link.type = 'image/x-icon'

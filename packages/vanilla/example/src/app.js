@@ -1,4 +1,4 @@
-import createEnvBar, { setTitle, setFavicon } from '../../src/index'
+import createEnvBar, { setTitle, setFavicon } from '@show-env/vanilla'
 
 window.onload = () => {
     let bar
