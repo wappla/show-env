@@ -1,4 +1,4 @@
-<h1 align="center">Show env React</h1>
+<h1 align="center">Show env Core</h1>
 <div align="center">
 
 [![GitHub release](https://img.shields.io/github/release/wappla/show-env.svg?style=flat-square)](https://github.com/wappla/show-env/releases/)  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/show-env/blob/master/LICENSE)  [![GitHub pull-requests](https://img.shields.io/github/issues-pr/wappla/show-env.svg?style=flat-square)](https://GitHub.com/wappla/show-env/pull/)  [![GitHub issues](https://img.shields.io/github/issues/wappla/show-env.svg?style=flat-square)](https://GitHub.com/wappla/show-env/issues/)
@@ -36,9 +36,6 @@
 - [Getting started](#getting-started)
 - [Props](#props)
 - [Running example](#running-example)
-- [Contributing](#contributing)
-- [About us](#about-us)
-- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -60,17 +57,3 @@ TODO: add props
 
 
 ## Running example
-
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://github.com/wappla/show-env) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## About us
-
-[Wappla BVBA](https://www.wappla.com/)
-We shape, build and grow ambitious digital products.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/wappla/show-env/blob/master/LICENSE) file for details

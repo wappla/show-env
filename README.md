@@ -31,48 +31,24 @@ Package to show which environment you are viewing by showing a bar on top, chang
 
 ## Table of contents
 
-doc-toc can be used to automate this: https://github.com/thlorenz/doctoc
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+- [Installation and usage](#installation-and-usage)
+- [Built With](#built-with)
+- [Contributing](#contributing)
+- [Versioning](#versioning)
+- [Authors](#authors)
+- [About us](#about-us)
+- [License](#license)
 
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
-Give examples
-```
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Installation and usage
 
 * [React](react#readme)
 * [Vanilla JS](vanilla#readme)
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this
 
 ## Built With
 

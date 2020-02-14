@@ -6,7 +6,8 @@
     "modules:install": "lerna bootstrap",
     "modules:remove": "lerna run modules:remove",
     "modules:reset": "npm run modules:remove && npm run modules:install",
-    "dev": "lerna run dev"
+    "dev": "lerna run dev",
+    "create-toc": "doctoc ./README.md && lerna run create-toc"
   },
   "author": {
     "name": "Wappla",
@@ -24,11 +25,12 @@
   },
   "homepage": "https://github.com/wappla/show-env#readme",
   "devDependencies": {
-    "lerna": "^3.20.2",
+    "doctoc": "^1.4.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jest": "^22.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.16.0"
+    "eslint-plugin-react": "^7.16.0",
+    "lerna": "^3.20.2"
   }
 }
