@@ -1,28 +1,34 @@
 {
-  "name": "show-env",
+  "name": "@show-env/mono",
   "version": "1.0.0",
-  "description": "Package to show which environment you are viewing by showing a bar on top, changing the favicon and/or prepend the env to the document title",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "modules:install": "lerna bootstrap",
+    "modules:remove": "lerna run modules:remove",
+    "modules:reset": "npm run modules:remove && npm run modules:install",
+    "dev": "lerna run dev"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wappla/show-env.git"
+  "author": {
+    "name": "Wappla",
+    "email": "development@wappla.com",
+    "url": "http://wappla.com"
   },
-  "author": "Kevin Hurts",
-  "license": "ISC",
+  "keywords": [
+    "react",
+    "environment",
+    "favicon"
+  ],
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wappla/show-env/issues"
   },
   "homepage": "https://github.com/wappla/show-env#readme",
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "lerna": "^3.20.2",
     "eslint-config-airbnb": "^18.0.1",
-    "eslint-plugin-import": "^2.20.1",
-    "eslint-plugin-jest": "^23.7.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jest": "^22.20.0",
     "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-react": "^7.18.3",
-    "react": "^16.12.0"
+    "eslint-plugin-react": "^7.16.0"
   }
 }
