@@ -1,7 +1,7 @@
 <h1 align="center">Show env React</h1>
 <div align="center">
 
-[![GitHub release](https://img.shields.io/github/release/wappla/show-env.svg?style=flat-square)](https://github.com/wappla/show-env/releases/)  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/show-env/blob/master/LICENSE)  [![GitHub pull-requests](https://img.shields.io/github/issues-pr/wappla/show-env.svg?style=flat-square)](https://GitHub.com/wappla/show-env/pull/)  [![GitHub issues](https://img.shields.io/github/issues/wappla/show-env.svg?style=flat-square)](https://GitHub.com/wappla/show-env/issues/)
+[![GitHub release](https://img.shields.io/github/release/wappla/show-env.svg?style=flat-square)](https://github.com/wappla/show-env/releases/)  [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/wappla/show-env/blob/master/LICENSE)  [![GitHub pull-requests](https://img.shields.io/github/issues-pr/wappla/show-env.svg?style=flat-square)](https://github.com/wappla/show-env/pulls/)  [![GitHub issues](https://img.shields.io/github/issues/wappla/show-env.svg?style=flat-square)](https://github.com/wappla/show-env/issues/)
   <h3>
     <a href="about-us">
       About Us
