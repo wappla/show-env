@@ -4,7 +4,10 @@
   "main": "index.js",
   "scripts": {
     "build": "node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "dev": "npm run build -- --watch"
+    "dev": "npm run build -- --watch",
+    "modules:install": "npm install",
+    "modules:remove": "rm -rf node_modules",
+    "modules:reset": "npm run modules:remove && npm run modules:install"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",

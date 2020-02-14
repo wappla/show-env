@@ -5,7 +5,7 @@
   "scripts": {
     "modules:install": "lerna bootstrap",
     "modules:remove": "lerna run modules:remove",
-    "modules:reset": "npm run modules:remove && npm run modules:install",
+    "modules:reset": "lerna run modules:reset",
     "dev": "lerna run dev",
     "create-toc": "doctoc ./README.md && lerna run create-toc"
   },

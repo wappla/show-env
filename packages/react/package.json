@@ -2,12 +2,26 @@
   "name": "@show-env/react",
   "private": true,
   "version": "1.0.0",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "create-toc": "doctoc ./README.md"
+    "create-toc": "doctoc ./README.md",
+    "modules:install": "npm install",
+    "modules:remove": "rm -rf node_modules",
+    "modules:reset": "npm run modules:remove && npm run modules:install",
+    "transpile": "babel src -d dist --copy-files"
+  },
+  "peerDependencies": {
+    "react": ">=16.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0"
+  },
+  "dependencies": {
+    "@show-env/core": "^1.0.0"
   }
 }

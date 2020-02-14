@@ -4,6 +4,7 @@ import {
     getColor,
 } from '@show-env/core'
 
+// TODO: expose only needed methods from core
 export * from '@show-env/core'
 
 const createEnvBar = async ({

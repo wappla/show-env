@@ -1,8 +1,12 @@
 import React from 'react'
-import { DEFAULT } from '../../core/constants'
-import { getTheme, getColor } from '../../core/index'
+import {
+    DEFAULT,
+    getTheme,
+    getColor,
+} from '@show-env/core'
 
-export { setTitle, setFavicon } from '../../../core/index'
+// TODO: expose only needed methods from core
+export * from '@show-env/core'
 
 const EnvBar = ({
     env,
