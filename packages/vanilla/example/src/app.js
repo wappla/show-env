@@ -21,7 +21,7 @@ window.onload = () => {
         // Update title
         changeTitle(env, { type: 'replace' })
         // Update favicon
-        // TODO: update favicon
+        changeFavicon(`assets/favicons/favicon-${env}.ico`)
     }
 
     // Create initial bar

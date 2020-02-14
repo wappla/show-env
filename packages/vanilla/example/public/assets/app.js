@@ -1905,9 +1905,10 @@ window.onload = function () {
               Object(_src_index__WEBPACK_IMPORTED_MODULE_1__["changeTitle"])(env, {
                 type: 'replace'
               }); // Update favicon
-              // TODO: update favicon
 
-            case 7:
+              Object(_src_index__WEBPACK_IMPORTED_MODULE_1__["changeFavicon"])("assets/favicons/favicon-".concat(env, ".ico"));
+
+            case 8:
             case "end":
               return _context.stop();
           }
