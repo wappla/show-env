@@ -2,7 +2,7 @@ import React from 'react'
 import { DEFAULT } from '../../core/constants'
 import { getTheme, getColor } from '../../core/index'
 
-export { changeTitle, changeFavicon } from '../../../core/index'
+export { setTitle, setFavicon } from '../../../core/index'
 
 const EnvBar = ({
     env,

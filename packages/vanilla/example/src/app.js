@@ -1,4 +1,4 @@
-import createEnvBar, { changeTitle, changeFavicon } from '../../src/index'
+import createEnvBar, { setTitle, setFavicon } from '../../src/index'
 
 window.onload = () => {
     let bar
@@ -19,9 +19,9 @@ window.onload = () => {
         removeBar()
         bar = await createEnvBar({ env, theme })
         // Update title
-        changeTitle(env, { type: 'replace' })
+        setTitle(env, { type: 'replace' })
         // Update favicon
-        changeFavicon(`assets/favicons/favicon-${env}.ico`)
+        setFavicon(`assets/favicons/favicon-${env}.ico`)
     }
 
     // Create initial bar

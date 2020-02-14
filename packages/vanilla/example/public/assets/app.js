@@ -873,13 +873,13 @@ var DEVELOPMENT = 'development';
 /*!*******************************************************************************!*\
   !*** /Users/kevinhurts/projects/packages/show-env/packages/core/src/index.js ***!
   \*******************************************************************************/
-/*! exports provided: changeFavicon, changeTitle, getTheme, getColor */
+/*! exports provided: setFavicon, setTitle, getTheme, getColor */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeFavicon", function() { return changeFavicon; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "changeTitle", function() { return changeTitle; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setFavicon", function() { return setFavicon; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setTitle", function() { return setTitle; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getTheme", function() { return getTheme; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getColor", function() { return getColor; });
 /* harmony import */ var _theme_bootstrap__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./theme/bootstrap */ "../../core/src/theme/bootstrap.js");
@@ -890,7 +890,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-var changeFavicon = function changeFavicon(newIcon) {
+var setFavicon = function setFavicon(newIcon) {
   var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
   link.type = 'image/x-icon';
   link.rel = 'shortcut icon';
@@ -912,7 +912,7 @@ var getTitle = function getTitle(env, title, type, divider) {
   }
 };
 
-var changeTitle = function changeTitle(env, _ref) {
+var setTitle = function setTitle(env, _ref) {
   var type = _ref.type,
       _ref$divider = _ref.divider,
       divider = _ref$divider === void 0 ? '-' : _ref$divider;
@@ -1026,7 +1026,7 @@ var light = (_light = {}, _defineProperty(_light, _constants__WEBPACK_IMPORTED_M
 /*!***********************!*\
   !*** ../src/index.js ***!
   \***********************/
-/*! exports provided: changeTitle, changeFavicon, default */
+/*! exports provided: setTitle, setFavicon, default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1035,9 +1035,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _core_src_constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core/src/constants */ "../../core/src/constants.js");
 /* harmony import */ var _core_src_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core/src/index */ "../../core/src/index.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "changeTitle", function() { return _core_src_index__WEBPACK_IMPORTED_MODULE_2__["changeTitle"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "setTitle", function() { return _core_src_index__WEBPACK_IMPORTED_MODULE_2__["setTitle"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "changeFavicon", function() { return _core_src_index__WEBPACK_IMPORTED_MODULE_2__["changeFavicon"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "setFavicon", function() { return _core_src_index__WEBPACK_IMPORTED_MODULE_2__["setFavicon"]; });
 
 
 
@@ -1902,11 +1902,11 @@ window.onload = function () {
             case 5:
               bar = _context.sent;
               // Update title
-              Object(_src_index__WEBPACK_IMPORTED_MODULE_1__["changeTitle"])(env, {
+              Object(_src_index__WEBPACK_IMPORTED_MODULE_1__["setTitle"])(env, {
                 type: 'replace'
               }); // Update favicon
 
-              Object(_src_index__WEBPACK_IMPORTED_MODULE_1__["changeFavicon"])("assets/favicons/favicon-".concat(env, ".ico"));
+              Object(_src_index__WEBPACK_IMPORTED_MODULE_1__["setFavicon"])("assets/favicons/favicon-".concat(env, ".ico"));
 
             case 8:
             case "end":

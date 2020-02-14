@@ -1,7 +1,7 @@
 import { DEFAULT } from '../../core/src/constants'
 import { getTheme, getColor } from '../../core/src/index'
 
-export { changeTitle, changeFavicon } from '../../core/src/index'
+export { setTitle, setFavicon } from '../../core/src/index'
 
 const createEnvBar = async ({
     env,

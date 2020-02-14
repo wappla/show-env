@@ -6,7 +6,7 @@ import tailwind, {
 } from './theme/tailwind'
 import * as constants from './constants'
 
-export const changeFavicon = (newIcon) => {
+export const setFavicon = (newIcon) => {
     const link = document.querySelector("link[rel*='icon']") || document.createElement('link')
     link.type = 'image/x-icon'
     link.rel = 'shortcut icon'
@@ -26,7 +26,7 @@ const getTitle = (env, title, type, divider) => {
     }
 }
 
-export const changeTitle = (env, {
+export const setTitle = (env, {
     type,
     divider = '-',
 }) => {
