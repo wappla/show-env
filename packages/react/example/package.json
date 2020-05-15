@@ -7,7 +7,8 @@
     "dev": "react-scripts start",
     "modules:install": "npm install",
     "modules:remove": "rm -rf node_modules",
-    "modules:reset": "npm run modules:remove && npm run modules:install"
+    "modules:reset": "npm run modules:remove && npm run modules:install",
+    "modules:update": "npm-check --update"
   },
   "browserslist": {
     "production": [
@@ -24,11 +25,11 @@
     ]
   },
   "devDependencies": {
-    "react-scripts": "^3.2.0"
+    "react-scripts": "^3.4.1"
   },
   "dependencies": {
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "@show-env/react": "^1.0.0"
+    "@show-env/react": "^1.0.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
