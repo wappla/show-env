@@ -4,7 +4,7 @@ import Button from './Button'
 
 const App = () => {
     const [theme, setTheme] = useState('default')
-    const [env, setEnv] = useState('development')
+    const [env, setEnv] = useState('local')
 
     useEffect(() => {
         // Update title
@@ -13,10 +13,13 @@ const App = () => {
         setFavicon(`assets/favicon-${env}.ico`)
     }, [env])
 
+    console.log(env)
+
     return (
         <>
             <EnvBar
                 env={env}
+                envMap={{ local: 'development'}}
                 theme={theme}
             />
             <div className="container">
@@ -61,7 +64,7 @@ const App = () => {
                     <p>Change environment</p>
                     <Button
                         className="js-change-environment development"
-                        onClick={() => setEnv('development')}
+                        onClick={() => setEnv('local')}
                     >
                         Development
 

@@ -8,11 +8,11 @@
   },
   "scripts": {
     "create-toc": "doctoc ./README.md --github",
-    "transpile": "babel src -d dist --copy-files",
     "modules:install": "npm install",
     "modules:remove": "rm -rf node_modules",
     "modules:reset": "npm run modules:remove && npm run modules:install",
-    "modules:update": "npm-check --update"
+    "modules:update": "npm-check --update",
+    "build": "babel src -d dist --copy-files"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",

@@ -5,6 +5,7 @@ import {
     DEFAULT,
     getTheme,
     getColor,
+    getEnv,
 } from '@wappla/show-env-core'
 
 // TODO: expose only needed methods from core
@@ -15,9 +16,10 @@ const EnvBar = ({
     theme: themeName = DEFAULT,
     zIndex = 100,
     height = '5px',
+    envMap,
 }) => {
     const theme = getTheme(themeName)
-    const backgroundColor = getColor(env, theme)
+    const backgroundColor = getColor(getEnv[envMap, env], theme)
 
     const style = {
         position: 'fixed',

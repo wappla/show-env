@@ -8,6 +8,16 @@ import * as constants from './constants'
 
 export * from './constants'
 
+export const getEnv = (envMap, env) => {
+    const finalEnvMap = {
+        development: 'development',
+        staging: 'staging',
+        production: 'production',
+        ...envMap,
+    }
+    return finalEnvMap[env]
+}
+
 export const setFavicon = (newIcon) => {
     const link = document.querySelector("link[rel*='icon']") || document.createElement('link')
     link.type = 'image/x-icon'

@@ -47,8 +47,8 @@ Package to show which environment you are viewing by showing a bar on top, chang
 
 ## Installation and usage
 
-* [React](react#readme)
-* [Vanilla JS](vanilla#readme)
+* [React](packages/react#readme)
+* [Vanilla JS](packages/vanilla#readme)
 
 ## Built With
 

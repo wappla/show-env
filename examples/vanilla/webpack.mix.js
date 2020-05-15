@@ -12,7 +12,7 @@ const mix = require('laravel-mix')
  */
 
 mix.js('src/app.js', 'public/assets')
-    .copy('../../example-assets', 'public/assets/favicons')
+    .copy('../../examples/assets', 'public/assets/favicons')
     .setPublicPath('public')
     .browserSync({ server: 'public', proxy: null, port: 3001 })
 

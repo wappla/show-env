@@ -1,6 +1,6 @@
 {
   "name": "@wappla/show-env-react-example",
-  "version": "0.0.1",
+  "version": "0.1.2",
   "private": true,
   "scripts": {
     "init": "cp ../../example-assets ./public/asses/favicons",
@@ -28,7 +28,7 @@
     "react-scripts": "^3.4.1"
   },
   "dependencies": {
-    "@wappla/show-env-react": "^0.0.1",
+    "@wappla/show-env-react": "^0.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

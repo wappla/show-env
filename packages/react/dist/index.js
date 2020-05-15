@@ -12,15 +12,15 @@ require("regenerator-runtime/runtime");
 
 var _react = _interopRequireDefault(require("react"));
 
-var _core = require("@wappla/show-env-core");
+var _showEnvCore = require("@wappla/show-env-core");
 
-Object.keys(_core).forEach(function (key) {
+Object.keys(_showEnvCore).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;
   if (Object.prototype.hasOwnProperty.call(_exportNames, key)) return;
   Object.defineProperty(exports, key, {
     enumerable: true,
     get: function get() {
-      return _core[key];
+      return _showEnvCore[key];
     }
   });
 });
@@ -31,13 +31,14 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var EnvBar = function EnvBar(_ref) {
   var env = _ref.env,
       _ref$theme = _ref.theme,
-      themeName = _ref$theme === void 0 ? _core.DEFAULT : _ref$theme,
+      themeName = _ref$theme === void 0 ? _showEnvCore.DEFAULT : _ref$theme,
       _ref$zIndex = _ref.zIndex,
       zIndex = _ref$zIndex === void 0 ? 100 : _ref$zIndex,
       _ref$height = _ref.height,
-      height = _ref$height === void 0 ? '5px' : _ref$height;
-  var theme = (0, _core.getTheme)(themeName);
-  var backgroundColor = (0, _core.getColor)(env, theme);
+      height = _ref$height === void 0 ? '5px' : _ref$height,
+      envMap = _ref.envMap;
+  var theme = (0, _showEnvCore.getTheme)(themeName);
+  var backgroundColor = (0, _showEnvCore.getColor)(_showEnvCore.getEnv[(envMap, env)], theme);
   var style = {
     position: 'fixed',
     zIndex: zIndex,

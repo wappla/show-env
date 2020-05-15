@@ -6,6 +6,7 @@
     "modules:install": "lerna bootstrap",
     "modules:remove": "lerna run modules:remove",
     "modules:reset": "lerna run modules:reset",
+    "build": "lerna run build",
     "dev": "lerna run dev",
     "create-toc": "doctoc ./README.md --github && lerna run create-toc"
   },
