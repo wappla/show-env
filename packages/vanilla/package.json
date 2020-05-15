@@ -3,7 +3,9 @@
   "private": false,
   "version": "0.0.2",
   "main": "src/index.js",
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "create-toc": "doctoc ./README.md --github",
     "modules:install": "npm install",
