@@ -1,6 +1,6 @@
 {
   "name": "@wappla/show-env-vanilla",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "main": "dist/index.js",
   "private": false,
   "publishConfig": {
