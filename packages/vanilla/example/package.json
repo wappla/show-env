@@ -1,6 +1,6 @@
 {
   "name": "@show-env/example",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "scripts": {
     "build": "node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -17,6 +17,6 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
-    "@show-env/vanilla": "^1.0.0"
+    "@show-env/vanilla": "^0.0.1"
   }
 }

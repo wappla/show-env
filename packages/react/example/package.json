@@ -1,6 +1,6 @@
 {
   "name": "@show-env/react-example",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "init": "cp ../../example-assets ./public/asses/favicons",
@@ -28,7 +28,7 @@
     "react-scripts": "^3.4.1"
   },
   "dependencies": {
-    "@show-env/react": "^1.0.0",
+    "@show-env/react": "^0.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }

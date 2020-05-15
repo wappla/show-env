@@ -1,6 +1,6 @@
 {
   "name": "@show-env/vanilla",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "private": true,
   "main": "src/index.js",
   "scripts": {
@@ -17,7 +17,7 @@
     "@babel/preset-env": "^7.9.6"
   },
   "dependencies": {
-    "@show-env/core": "^1.0.0",
+    "@show-env/core": "^0.0.1",
     "core-js": "^3.6.5",
     "regenerator-runtime": "^0.13.5"
   }
