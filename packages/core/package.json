@@ -1,8 +1,9 @@
 {
   "name": "@show-env/core",
-  "version": "0.0.1",
+  "private": false,
+  "version": "0.0.2",
   "main": "dist/index.js",
-  "private": true,
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
     "create-toc": "doctoc ./README.md --github",
     "transpile": "babel src -d dist --copy-files",
