@@ -1,7 +1,7 @@
 {
-  "name": "@show-env/mono",
+  "name": "@wappla/show-env",
   "version": "1.0.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "modules:install": "lerna bootstrap",
     "modules:remove": "lerna run modules:remove",

@@ -1,8 +1,11 @@
 {
-  "name": "@show-env/vanilla",
-  "version": "0.0.1",
-  "private": true,
-  "main": "src/index.js",
+  "name": "@wappla/show-env-vanilla",
+  "version": "0.0.2",
+  "main": "dist/index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "create-toc": "doctoc ./README.md --github",
     "modules:install": "npm install",
@@ -17,8 +20,9 @@
     "@babel/preset-env": "^7.9.6"
   },
   "dependencies": {
-    "@show-env/core": "^0.0.1",
+    "@wappla/show-env-core": "^0.0.1",
     "core-js": "^3.6.5",
     "regenerator-runtime": "^0.13.5"
-  }
+  },
+  "gitHead": "a14553c8b56561ed3295644cac7d61e97ee730a6"
 }

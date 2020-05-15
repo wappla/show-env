@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import EnvBar, { setFavicon, setTitle } from '@show-env/react'
+import EnvBar, { setFavicon, setTitle } from '@wappla/show-env-react'
 import Button from './Button'
 
 const App = () => {

@@ -5,10 +5,10 @@ import {
     DEFAULT,
     getTheme,
     getColor,
-} from '@show-env/core'
+} from '@wappla/show-env-core'
 
 // TODO: expose only needed methods from core
-export * from '@show-env/core'
+export * from '@wappla/show-env-core'
 
 const createEnvBar = async ({
     env,

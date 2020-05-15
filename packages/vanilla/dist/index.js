@@ -6,7 +6,7 @@ Object.defineProperty(exports, "__esModule", {
 var _exportNames = {};
 exports["default"] = void 0;
 
-var _core = require("@show-env/core");
+var _core = require("@wappla/show-env-core");
 
 Object.keys(_core).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;

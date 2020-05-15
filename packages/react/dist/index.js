@@ -12,7 +12,7 @@ require("regenerator-runtime/runtime");
 
 var _react = _interopRequireDefault(require("react"));
 
-var _core = require("@show-env/core");
+var _core = require("@wappla/show-env-core");
 
 Object.keys(_core).forEach(function (key) {
   if (key === "default" || key === "__esModule") return;

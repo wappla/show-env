@@ -1,5 +1,6 @@
 {
-  "name": "@show-env/example",
+  "name": "@wappla/show-env-vanilla-example",
+  "private": true,
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
@@ -17,6 +18,6 @@
     "vue-template-compiler": "^2.6.11"
   },
   "dependencies": {
-    "@show-env/vanilla": "^0.0.1"
+    "@wappla/show-env-vanilla": "^0.0.1"
   }
 }

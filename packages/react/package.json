@@ -1,8 +1,11 @@
 {
-  "name": "@show-env/react",
-  "private": true,
+  "name": "@wappla/show-env-react",
   "version": "0.0.1",
   "main": "dist/index.js",
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "create-toc": "doctoc ./README.md --github",
     "modules:install": "npm install",
@@ -25,6 +28,7 @@
     "regenerator-runtime": "^0.13.5"
   },
   "dependencies": {
-    "@show-env/core": "^0.0.1"
-  }
+    "@wappla/show-env-core": "^0.0.1"
+  },
+  "gitHead": "a14553c8b56561ed3295644cac7d61e97ee730a6"
 }

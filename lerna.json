@@ -1,8 +1,14 @@
 {
   "packages": [
     "packages/*",
-    "packages/**/example",
-    "packages/**/package"
+    "**/example/**"
   ],
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "**/example/**"
+      ]
+    }
+  }
 }

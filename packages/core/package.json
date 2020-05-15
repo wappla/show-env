@@ -1,8 +1,11 @@
 {
-  "name": "@show-env/core",
+  "name": "@wappla/show-env-core",
   "version": "0.0.1",
   "main": "dist/index.js",
-  "private": true,
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "create-toc": "doctoc ./README.md --github",
     "transpile": "babel src -d dist --copy-files",
@@ -15,5 +18,6 @@
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6"
-  }
+  },
+  "gitHead": "abeb5dc263fa61db72606f960c9e7543523e54ad"
 }

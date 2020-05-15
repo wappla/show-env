@@ -1,4 +1,4 @@
-import createEnvBar, { setTitle, setFavicon } from '@show-env/vanilla'
+import createEnvBar, { setTitle, setFavicon } from '@wappla/show-env-vanilla'
 
 window.onload = () => {
     let bar

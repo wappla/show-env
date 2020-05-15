@@ -1,5 +1,5 @@
 {
-  "name": "@show-env/react-example",
+  "name": "@wappla/show-env-react-example",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -28,7 +28,7 @@
     "react-scripts": "^3.4.1"
   },
   "dependencies": {
-    "@show-env/react": "^0.0.1",
+    "@wappla/show-env-react": "^0.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   }
