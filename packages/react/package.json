@@ -8,6 +8,7 @@
     "modules:install": "npm install",
     "modules:remove": "rm -rf node_modules",
     "modules:reset": "npm run modules:remove && npm run modules:install",
+    "modules:update": "npm-check --update",
     "transpile": "babel src -d dist --copy-files"
   },
   "peerDependencies": {
@@ -15,11 +16,13 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "core-js": "^3.6.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "regenerator-runtime": "^0.13.5"
   },
   "dependencies": {
     "@show-env/core": "^1.0.0"

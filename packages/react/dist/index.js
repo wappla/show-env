@@ -4,7 +4,11 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 var _exportNames = {};
-exports["default"] = void 0;
+exports.default = void 0;
+
+require("core-js/stable");
+
+require("regenerator-runtime/runtime");
 
 var _react = _interopRequireDefault(require("react"));
 
@@ -21,7 +25,7 @@ Object.keys(_core).forEach(function (key) {
   });
 });
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 // TODO: expose only needed methods from core
 var EnvBar = function EnvBar(_ref) {
@@ -43,10 +47,10 @@ var EnvBar = function EnvBar(_ref) {
     height: height,
     backgroundColor: backgroundColor
   };
-  return _react["default"].createElement("div", {
+  return /*#__PURE__*/_react.default.createElement("div", {
     style: style
   });
 };
 
 var _default = EnvBar;
-exports["default"] = _default;
+exports.default = _default;

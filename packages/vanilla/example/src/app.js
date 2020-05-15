@@ -8,7 +8,8 @@ window.onload = () => {
     const removeBar = () => {
         // Remove bar if already exists
         if (typeof bar !== 'undefined') {
-            bar.remove()
+            bar.parentElement.removeChild(bar)
+            // bar.remove()
         }
     }
 
